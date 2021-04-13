@@ -3,6 +3,4 @@
 
 import Control.Monad
 
-main :: IO ()
-main = do
-  putStrLn $ show $ sum $ filter (liftM2 (||) (\x -> mod x 3 == 0) (\x -> mod x 5 == 0)) [1..1000]
+main = do putStrLn $ show $ sum $ filter (liftM2 (||) (\x -> mod x 3 == 0) (\x -> mod x 5 == 0)) [1..1000]
